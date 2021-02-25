@@ -118,6 +118,8 @@ class BoardSquare extends StatelessWidget {
             .get(squareName)
             .color
             .toString()
+            .split('.')
+            .last
             .substring(0, 1)
             .toUpperCase() +
         model.game.get(squareName).type.toUpperCase();
